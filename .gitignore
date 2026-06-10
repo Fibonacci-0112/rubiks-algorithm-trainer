@@ -427,3 +427,16 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# --- Node / monorepo build artifacts ---
+node_modules/
+.pnpm-store/
+dist/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+.env*.local
+
+# Expo / React Native
+.expo/

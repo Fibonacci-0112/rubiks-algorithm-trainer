@@ -1,0 +1,6 @@
+-- The canonical algorithm library lives in packages/core/src/algorithms/*.json
+-- and is bundled into the client apps. The cloud database only stores
+-- per-user progress, so no algorithm rows are seeded here.
+--
+-- This file is intentionally minimal; add reference/analytics seed data below
+-- as the product grows.
