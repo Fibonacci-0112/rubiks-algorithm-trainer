@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install dependencies",
+      "type": "shell",
+      "command": "pnpm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Web: dev server",
+      "type": "shell",
+      "command": "pnpm --filter @rubiks/web dev",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Web: production build",
+      "type": "shell",
+      "command": "pnpm --filter @rubiks/web build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test (all packages)",
+      "type": "shell",
+      "command": "pnpm -r test",
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Typecheck (all packages)",
+      "type": "shell",
+      "command": "pnpm -r typecheck",
+      "problemMatcher": ["$tsc"]
+    }
+  ]
+}
